@@ -1,0 +1,15 @@
+{
+  "name": "monicabackend",
+  "version": "1.0.0",
+  "description": "API RES con Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Monica",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
