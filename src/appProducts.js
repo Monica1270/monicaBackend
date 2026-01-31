@@ -10,7 +10,7 @@ appProducts.get('/', (request, response) =>{
     //yo cada vez que hago un refrescar en el local
     //se va aumentado el id en la terminal
     id++;
-    console.log(`<h1>id products ${id}</h1>`);
+    console.log(`id products ${id}`);
 response.send('hola desde Express');
 });
 
