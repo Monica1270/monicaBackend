@@ -4,12 +4,15 @@
   "description": "API RES con Express",
   "main": "app.js",
   "scripts": {
+    "start": "node src/appProducts.js",
+    "dev": "nodemon src/appProducts.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Monica",
   "type": "module",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
   }
 }
