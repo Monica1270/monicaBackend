@@ -1,0 +1,11 @@
+{
+    "id": "number",
+    "title": "String",
+    "code":"String",
+    "price":"number",
+    "Status":"Boolean",
+    "Stock":"number",
+    "category":"String",
+    "thumbnails": "./appProducts/imag"
+
+}

@@ -11,7 +11,14 @@ appProducts.get('/', (request, response) =>{
     //se va aumentado el id en la terminal
     id++;
     console.log(`id products ${id}`);
-response.send('hola desde Express');
+response.send(`<h1>El codigo de identificación de su producto es  ${id}</h1>`);np
+});
+appProducts.get('/products', (request, response)=>{
+const product = {
+    id:id,
+    product:'namber',
+}
+response.json(product);
 });
 
 
