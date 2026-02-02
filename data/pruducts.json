@@ -1,5 +1,5 @@
-{
-    "id": "number",
+[{
+    "id": "1",
     "title": "String",
     "code":"String",
     "price":"number",
@@ -8,4 +8,15 @@
     "category":"String",
     "thumbnails": "./appProducts/imag"
 
-}
+},
+{
+    "id": "1",
+    "title": "String",
+    "code":"String",
+    "price":"number",
+    "Status":"Boolean",
+    "Stock":"number",
+    "category":"String",
+    "thumbnails": "./appProducts/imag"
+
+}]
