@@ -1,8 +1,10 @@
 import express from 'express';
+import products from '../data/products.json' with {type: 'json'};
 const appProducts = express();
+appProducts.use(express.json());
 const PORT = 8080;
 let id = 0;
-const producto = './data/products.json'
+let idPost = 0;
 // cree la ruta raiz.
 appProducts.get('/', (request, response) =>{
     // el request es lo que pide el cliente por el momento esta pidien la raiz'/'
@@ -15,12 +17,9 @@ response.send(`<h1>El codigo de identificación de su producto es  ${id}</h1>`);
 });
 // creo la ruta de productos que devuelve un json
 //creo una constante del producto para que llame al nombre del producnto
-appProducts.get('/', (request, response)=>{
-const product = {
-    id:0,
-    product:'namber',
-}
-response.json(product);
+appProducts.get('/products', (request, response)=>{
+
+response.json(products);
 });
 
 //Ruta dinámica para buscar: el producto con id
@@ -38,6 +37,28 @@ else{
     data: 'producto'
 })
 }
+});
+appProducts.post('/', (request, response) =>{
+    idPost++;
+    console.log(`id products ${idPost}`);
+response.send(`El codigo de identificación de su producto es  ${idPost}`);
+});
+appProducts.post('/products/:idPost', (request, response)=>{
+console.log('guardando array')
+const {body} = request;
+const {title, description, price, status, stock, category, thumbnails}= request.body;
+//aqui le digo que me suba al array 
+products.push({
+    idPost,
+    title, 
+    description, 
+    price, 
+    status,
+     stock,
+     category, 
+     thumbnails
+
+})
 });
 
 

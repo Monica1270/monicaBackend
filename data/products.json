@@ -1,0 +1,22 @@
+[{
+    "id": "1",
+    "title": "africa",
+    "code":"oleo",
+    "price":10000,
+    "Status":"Boolean",
+    "Stock":2,
+    "category":"venta",
+    "thumbnails": "./appProducts/imag"
+
+},
+{
+    "id": "2",
+    "title": "Perú",
+    "code":"óleo",
+    "price":5000,
+    "Status":"Boolean",
+    "Stock":3,
+    "category":"venta",
+    "thumbnails": "./appProducts/imag"
+
+}]
